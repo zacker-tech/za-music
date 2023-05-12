@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { SectionSubtitle } from "components/ui/Typography";
 
-export const ContentWrapper = styled.main`
-  padding: 0 120px;
-`;
-
 export const TrendsAndArtistsSection = styled.section`
   display: grid;
   grid-template-columns: 65% 35%;

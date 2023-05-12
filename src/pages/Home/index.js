@@ -4,7 +4,8 @@ import { loadCharts } from "services/api";
 import { SectionTitle } from "components/ui/Typography";
 import { Hero, Genres, Artists } from "components/HomePage";
 import TracksTable from "components/TracksTable";
-import { ContentWrapper, GreyTitle, TrendsAndArtistsSection, StyledAside } from "./styled";
+import { ContentWrapper } from "components/Layout";
+import { GreyTitle, TrendsAndArtistsSection, StyledAside } from "./styled";
 
 // Import Swiper styles
 import "swiper/css";
@@ -38,7 +39,7 @@ function Home() {
         <div>
           <GreyTitle>Global</GreyTitle>
           <SectionTitle>Tranding right now</SectionTitle>
-          <TracksTable tracks={chart?.tracks?.data} />
+          <TracksTable isLoading={isLoading} tracks={chart?.tracks?.data} />
         </div>
         <StyledAside>
           <GreyTitle>Global</GreyTitle>
