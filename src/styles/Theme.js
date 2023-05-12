@@ -15,6 +15,11 @@ export const theme = {
   fontWeights: {
     bold: 600,
     semibold: 500,
-    norma: 400,
+    normal: 400,
+  },
+  zIndex: {
+    10: 10,
+    20: 20,
+    30: 30,
   },
 };
