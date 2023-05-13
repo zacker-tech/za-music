@@ -18,7 +18,6 @@ function Search() {
         setIsLoading(true);
         const data = await search(searchQuery);
         setTracks(data);
-        console.log(data);
       } catch (err) {
         toast.error(err.message);
       } finally {
