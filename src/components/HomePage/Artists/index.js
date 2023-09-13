@@ -5,12 +5,10 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Wrapper, ArtistsWrapper, ArtistSkeletonWrapper, ArtistLoaderWrapper } from "./styled";
 import ArtistCard from "./ArtistCard";
-import { useWindowSize } from "hooks/useWindowSize";
-import { breakpoints } from "styles/BreakPoints";
+import useIsMobile from "hooks/useIsMobile";
 
 function Artists({ isLoading, artists }) {
-  const { width } = useWindowSize();
-  const isMobileLayout = width < breakpoints.md;
+  const isMobileLayout = useIsMobile;
   return (
     <Wrapper>
       <ArtistsWrapper>
